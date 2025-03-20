@@ -31,3 +31,17 @@ p {
     transform: translateY(0);
   }
 }
+body {
+    background-color: #f4f4f4; /* Warna latar belakang */
+    color: #333; /* Warna teks */
+    font-family: Arial, sans-serif; /* Jenis font */
+    text-align: center; /* Teks di tengah */
+}
+
+h1 {
+    color: #222; /* Warna judul */
+}
+
+p {
+    color: #555; /* Warna paragraf */
+}
