@@ -20,12 +20,12 @@ header {
 }
 
 .logo span {
-    color: red;
+    color: green;
 }
 
 .btn {
     background-color: green;
-    color: white;
+    color: black;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
