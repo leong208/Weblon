@@ -88,3 +88,26 @@ header {
   display: flex;
   animation: slideBanner 5s infinite;
 }
+.banner-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner {
+    display: flex;
+    width: 300%;
+    animation: slide 9s infinite linear;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
