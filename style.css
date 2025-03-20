@@ -45,3 +45,31 @@ h1 {
 p {
     color: #555; /* Warna paragraf */
 }
+/* Navbar */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #001F3F;
+    padding: 10px 20px;
+    color: white;
+}
+
+/* Logo */
+.logo {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Tombol Deposit */
+.btn-deposit:hover {
+    background-color: darkgreen;
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
