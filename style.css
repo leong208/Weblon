@@ -73,3 +73,18 @@ header {
 .blinking-button {
   animation: blink 1s infinite;
 }
+@keyframes slideBanner {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.banner-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.banner {
+  display: flex;
+  animation: slideBanner 5s infinite;
+}
