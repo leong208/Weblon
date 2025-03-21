@@ -15,11 +15,8 @@ header {
     background-color: #111;
     color: white;
 }
-.logo {
-    width: 150px; /* Sesuaikan ukuran */
-    height: auto;
-    display: block;
-    margin: 0 auto; /* Pusatkan logo */
+.logo img {
+    height: 40px;
 }
 .nav-buttons button {
     padding: 10px 15px;
