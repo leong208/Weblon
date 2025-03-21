@@ -86,7 +86,8 @@ header {
 
 .banner {
   display: flex;
-  animation: slideBanner 5s infinite;
+  animation: slideBanner 12s infinite; /* Diperpanjang agar lebih halus */
+}
 }
 .banner-container {
     width: 100%;
@@ -97,7 +98,7 @@ header {
 .banner {
     display: flex;
     width: 300%;
-    animation: slide 9s infinite linear;
+    animation: slide 12s infinite linear;
 }
 
 .banner img {
