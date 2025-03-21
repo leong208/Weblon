@@ -103,12 +103,11 @@ header {
 }
 
 .banner img {
-    width: 80%; /* Sesuaikan ukuran yang lebih kecil */
-    max-width: 600px; /* Batas maksimal ukuran */
-    height: auto; /* Menjaga aspek rasio */
-    margin: 0 auto; /* Pusatkan gambar */
+    width: 80% !important;
+    max-width: 600px !important;
+    height: auto !important;
+    margin: 0 auto !important;
 }
-
 @keyframes slide {
     0% { transform: translateX(0); }
     33% { transform: translateX(-100%); }
