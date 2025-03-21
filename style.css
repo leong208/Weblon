@@ -6,6 +6,7 @@ body {
     color: white;
 }
 
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
@@ -15,8 +16,9 @@ header {
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 26px;
     font-weight: bold;
+    color: white;
 }
 
 .logo span {
@@ -25,92 +27,78 @@ header {
 
 .btn {
     background-color: green;
-    color: black;
+    color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 25px;
     cursor: pointer;
     font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
 }
 
-.banner img {
-    width: 100%;
+.btn:hover {
+    background-color: #0f8a2c;
 }
 
+/* Menu Navigasi */
 .menu {
     display: flex;
     justify-content: center;
     background-color: #222;
-    padding: 10px;
+    padding: 12px;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .menu a {
     color: white;
-    margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
+    font-size: 16px;
+    padding: 10px 15px;
 }
 
-.games {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    padding: 20px;
-}
-
-.game img {
-    width: 100px;
-    transition: transform 0.3s ease;
-}
-
-.game img:hover {
-    transform: scale(1.1);
-}
- @keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.5; }
-}
-
-.blinking-button {
-  animation: blink 1s infinite;
-}
-@keyframes slideBanner {
-  0% { transform: translateX(0); }
-  50% { transform: translateX(-50%); }
-  100% { transform: translateX(0); }
-}
-
-.banner-container {
-  overflow: hidden;
-  width: 100%;
-}
-
-.banner {
-  display: flex;
-  animation: slideBanner 12s infinite; /* Diperpanjang agar lebih halus */
-}
-
+/* Banner Slider */
 .banner-container {
     width: 100%;
     overflow: hidden;
     position: relative;
-    max-width: 800px; /* Sesuaikan dengan lebar yang diinginkan */
 }
 
 .banner {
     display: flex;
     width: 300%;
-    animation: slide 12s infinite linear;
+    animation: slide 15s infinite linear;
 }
 
 .banner img {
-    width: 80% !important;
-    max-width: 600px !important;
-    height: auto !important;
-    margin: 0 auto !important;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
+
 @keyframes slide {
     0% { transform: translateX(0); }
     33% { transform: translateX(-100%); }
     66% { transform: translateX(-200%); }
     100% { transform: translateX(0); }
+}
+
+/* Game List */
+.games {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.game img {
+    width: 120px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.game img:hover {
+    transform: scale(1.1);
 }
