@@ -1,102 +1,77 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset dasar */
+* {
     margin: 0;
     padding: 0;
-    background-color: #101010;
-    color: white;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-/* Header */
-header {
+/* Navbar */
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #181818;
-    padding: 15px 20px;
-}
-
-.logo {
-    font-size: 26px;
-    font-weight: bold;
+    background: #111;
+    padding: 15px;
     color: white;
 }
 
-.logo span {
-    color: green;
+.navbar h1 {
+    font-size: 1.8rem;
+    color: #4CAF50;
 }
 
-.btn {
-    background-color: green;
+.btn-primary {
+    background-color: #4CAF50;
     color: white;
+    padding: 10px 20px;
     border: none;
-    padding: 12px 25px;
-    cursor: pointer;
-    font-weight: bold;
     border-radius: 5px;
-    transition: background 0.3s ease;
+    cursor: pointer;
 }
 
-.btn:hover {
-    background-color: #0f8a2c;
+/* Banner */
+.banner img {
+    width: 100%;
+    height: auto;
 }
 
 /* Menu Navigasi */
 .menu {
     display: flex;
     justify-content: center;
-    background-color: #222;
-    padding: 12px;
-    flex-wrap: wrap;
     gap: 15px;
+    background: #222;
+    padding: 10px;
 }
 
 .menu a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
-    font-size: 16px;
-    padding: 10px 15px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background: #333;
+    transition: 0.3s;
 }
 
-/* Banner Slider */
-.banner-container {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
+.menu a:hover {
+    background: #4CAF50;
 }
 
-.banner {
-    display: flex;
-    width: 300%;
-    animation: slide 15s infinite linear;
-}
-
-.banner img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-}
-
-@keyframes slide {
-    0% { transform: translateX(0); }
-    33% { transform: translateX(-100%); }
-    66% { transform: translateX(-200%); }
-    100% { transform: translateX(0); }
-}
-
-/* Game List */
+/* Permainan Populer */
 .games {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 15px;
     padding: 20px;
-    justify-items: center;
+    text-align: center;
 }
 
 .game img {
-    width: 120px;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
 }
 
 .game img:hover {
