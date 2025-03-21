@@ -1,4 +1,4 @@
-/* Reset dasar */
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -6,74 +6,108 @@
     font-family: Arial, sans-serif;
 }
 
-/* Navbar */
-.navbar {
+/* HEADER */
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #111;
-    padding: 15px;
+    padding: 10px;
+    background-color: #111;
     color: white;
 }
-
-.navbar h1 {
-    font-size: 1.8rem;
-    color: #4CAF50;
+.logo img {
+    height: 40px;
 }
-
-.btn-primary {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
+.nav-buttons button {
+    padding: 10px 15px;
     border: none;
-    border-radius: 5px;
+    font-size: 14px;
     cursor: pointer;
 }
+.blue { background-color: #007bff; color: white; }
+.red { background-color: #dc3545; color: white; }
 
-/* Banner */
-.banner img {
-    width: 100%;
-    height: auto;
-}
-
-/* Menu Navigasi */
-.menu {
+/* MENU NAVIGASI */
+nav ul {
     display: flex;
-    justify-content: center;
-    gap: 15px;
-    background: #222;
+    justify-content: space-around;
+    background-color: #222;
     padding: 10px;
+    list-style: none;
 }
-
-.menu a {
+nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 8px 15px;
-    border-radius: 5px;
-    background: #333;
-    transition: 0.3s;
 }
 
-.menu a:hover {
-    background: #4CAF50;
-}
-
-/* Permainan Populer */
-.games {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 15px;
-    padding: 20px;
-    text-align: center;
-}
-
-.game img {
+/* SLIDER */
+.slider img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
-    transition: transform 0.3s;
 }
 
-.game img:hover {
-    transform: scale(1.1);
+/* PROMO BUTTONS */
+.promo-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+.promo-buttons button {
+    padding: 10px 15px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+.green { background-color: #28a745; color: white; }
+
+/* KATEGORI PERMAINAN */
+.game-categories {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 10px;
+}
+.category {
+    text-align: center;
+    color: white;
+}
+.category img {
+    width: 40px;
+    height: auto;
+}
+
+/* DAFTAR GAME */
+.game-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.game {
+    text-align: center;
+}
+.game img {
+    width: 60px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #222;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+footer ul li a {
+    color: white;
+    text-decoration: none;
 }
