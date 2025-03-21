@@ -88,11 +88,12 @@ header {
   display: flex;
   animation: slideBanner 12s infinite; /* Diperpanjang agar lebih halus */
 }
-}
+
 .banner-container {
     width: 100%;
     overflow: hidden;
     position: relative;
+    max-width: 800px; /* Sesuaikan dengan lebar yang diinginkan */
 }
 
 .banner {
@@ -102,8 +103,10 @@ header {
 }
 
 .banner img {
-    width: 100%;
-    height: auto;
+    width: 80%; /* Sesuaikan ukuran yang lebih kecil */
+    max-width: 600px; /* Batas maksimal ukuran */
+    height: auto; /* Menjaga aspek rasio */
+    margin: 0 auto; /* Pusatkan gambar */
 }
 
 @keyframes slide {
