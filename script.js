@@ -25,3 +25,15 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+document.addEventListener("DOMContentLoaded", function () {
+    let slider = document.querySelector(".slider");
+    let index = 0;
+
+    function nextSlide() {
+        index++;
+        if (index > 2) { index = 0; }
+        slider.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    setInterval(nextSlide, 3000); // Ganti slide setiap 3 detik
+});
