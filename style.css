@@ -138,4 +138,18 @@ footer ul li a {
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}/* Styling untuk Dark Mode */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode header {
+    background-color: #1e1e1e;
+}
+
+.dark-mode button {
+    background-color: #444;
+    color: white;
+    border: 1px solid white;
 }
