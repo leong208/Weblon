@@ -152,4 +152,30 @@ footer ul li a {
     background-color: #444;
     color: white;
     border: 1px solid white;
+}/* Slider Container */
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Slider */
+.slider {
+    display: flex;
+    width: 300%;
+    animation: slide 9s infinite;
+}
+
+/* Gambar di dalam Slider */
+.slider img {
+    width: 100%;
+    flex: 1;
+}
+
+/* Animasi Perpindahan Gambar */
+@keyframes slide {
+    0% { transform: translateX(0%); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0%); }
 }
