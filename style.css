@@ -110,4 +110,32 @@ footer ul {
 footer ul li a {
     color: white;
     text-decoration: none;
+}/* Styling untuk Splash Screen */
+#splash-screen {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-size: 20px;
+    z-index: 9999;
+}
+
+/* Animasi Loader */
+.loader {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #fff;
+    border-top: 5px solid gold;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
