@@ -179,3 +179,18 @@ footer ul li a {
     66% { transform: translateX(-200%); }
     100% { transform: translateX(0%); }
 }
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.icons img {
+    width: 50px; /* Sesuaikan ukuran sesuai kebutuhan */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.icons img:hover {
+    transform: scale(1.1); /* Efek zoom saat hover */
+}
